@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- Britton's JS -->
+    <script src="brittons.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <!-- Britton's CSS -->
+    <link rel='stylesheet' href="brittons.css">
+
+
+    <title>Britton K. Deets</title>
+</head>
+
+<body style="font-family:Helvetica">
+
+<!-- --------------- Page Content ----------------- -->
+
+<!-- First View -->
+<section class="img-responsive bigBg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 logoCenter">
+                <img class="logo img-responsive hidden-md-down" src="images/LogoClearW.png" align="middle">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Navigation -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ft2" style="transition: top 0.3s;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Britton Kincaid Deets</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- About Me -->
+<section id="about" class="majorSection text-center colCenter">
+    <div class="container smallerWidth">
+        <div class="row" style="padding-bottom: 5%">
+            <div class="col-md-6">
+                <img src="images\BioPhoto2.jpeg" class="img-responsive rounded-circle margin" style="display:inline"
+                     alt="Bio Photo" width="325" height="325">
+            </div>
+            <div class="col-md-6" style="width:100%;">
+                <br>
+                <h1>About Me</h1>
+                <br>
+                <p style = "text-align: left;">I am student at UNC - Wilmington working towards degrees in Computer Science and Business Administration - Finance.
+                    I love solving puzzles and experiencing the "aha" moment. Programming logic makes a lot of sense to me, especially
+                    when I am  using financial data which I can fully understand from trading and my education. I am also a surfer
+                    and I spend most of my free time in the ocean.
+                </p>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images\about\nySouth.jpeg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images\about\MeSurfing1.jpeg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images\about\MeSurfing2.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+
+
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="majorSection text-center colCenter" style="background-color: rgba(10,40,50,.3);">
+    <div class="container smallerWidth">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Portfolio</h1>
+                <br>
+
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 portDiv">
+                <div class="overlay1">
+                    <img src="images\portfolio\autoTrading.png" class="photo-sq-300" onclick="openModal();currentSlide(1)">
+                    <div class="overlay">
+                        <p>Automated Trading</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 portDiv">
+                <div class="overlay1">
+                    <img src="images\portfolio\kakuroscreenshot.png" class="photo-sq-300" onclick="openModal();currentSlide(2)">
+                    <div class="overlay">
+                        <p>Kakuro Puzzle</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 portDiv">
+                <div class="overlay1">
+                    <img src="images\portfolio\RobinhoodLogo.png" class="photo-sq-300" onclick="openModal();currentSlide(3)">
+                    <div class="overlay">
+                        <p>Stock Trading</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 portDiv">
+                <div class="overlay1">
+                    <img src="images\portfolio\binary.jpg" class="photo-sq-300" onclick="openModal();currentSlide(4)" style="opacity:.8">
+                    <div class="overlay">
+                        <p>Price Pattern Search</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 portDiv">
+                <div class="overlay1">
+                    <img src="images\portfolio\lockPick.jpg" class="photo-sq-300" onclick="openModal();currentSlide(5)">
+                    <div class="overlay">
+                        <p>Programming Languages</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 portDiv">
+                <div class="overlay1">
+                    <img src="images\portfolio\space.jpg" class="photo-sq-300" onclick="openModal();currentSlide(6)">
+                    <div class="overlay">
+                        <p>Future Work</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides row no-gutters">
+                <div class="col-md-6 text-center m-0">
+                    <img src="images\portfolio\autoTrading.png" class="modalDisplay">
+                </div>
+                <div class="col-md-6 container4">
+                    <br>
+                    <h2>Automated Trading</h2>
+                    <p>
+                        I have written trading strategies for trading FOREX currencies on time frames from one minute to four hours.
+                        I have a few different strategies, but currently no organized central application to run them
+                        and track their performance. I am working on standardizing my backtesting, analysis, and production
+                        environments so I can quickly write new strategies and deploy them consistently.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides row no-gutters">
+                <div class="col-md-6 text-center m-0">
+                    <img src="images\portfolio\kakuroscreenshot.png" class="modalDisplay">
+                </div>
+                <div class="col-md-6 container4">
+                    <br>
+                    <h2>Kakuro Puzzle</h2>
+                    <p>
+                        As the main project in my Object Oriented Programming class a teammate and I developed an application
+                        based on the Kakuro Puzzle. In Java we used object oriented principles to create a user interface and control
+                        the game logic. Our code can be seen on my github page.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides row no-gutters">
+                <div class="col-md-6 text-center m-0">
+                    <img src="images\portfolio\RobinhoodLogo.png" class="modalDisplay">
+                </div>
+                <div class="col-md-6 container4">
+                    <br>
+                    <h2>Stock Trading and Equity Analysis</h2>
+                    <p>
+                        I have developed short to medium term trading stategies as well as employ strategies I have learned
+                        from my finance education. I trade using Robinhood, a commission free broker, which is great for
+                        the small value of my investment account but also inspires me to make changes in the Finance and Tech
+                        industries. Fall 2018 I am taking Finance 440 at UNCW in which the students analyze and manage a
+                        UNCW fund worth greater than $1M.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mySlides row no-gutters">
+                <div class="col-md-6 text-center m-0">
+                    <img src="images\portfolio\binary.jpg" class="modalDisplay">
+                </div>
+                <div class="col-md-6 container4">
+                    <br>
+                    <h2>Price Pattern Search</h2>
+                    <p>
+                        As my course project in Design and Analysis of Algorithms, I wrote a program in Java to search
+                        for patterns in historical stock prices. I took a segment of daily stock prices of length n and
+                        converted the value of the price to 1 or 0 depending on if the price changed positively or negatively
+                        compared to the previous day. If a certain pattern of 1's and 0's resulted in an n+1 price value of
+                        1, then I would consider that pattern an indication that the price would go up after that pattern.
+                        I also took into account the size of the price change and weighted the resulting expected return value
+                        based on that change. From this I developed a backtest trading long if there is a positive expected return and
+                        short if for a certain pattern there showed negative epected return.
+                    </p>
+                    <br>
+                    <p>
+                        On average the strategy tied buy and hold investing for the same period, but with more sophisticated
+                        entry and exit strategies, I think this simple strategy could be more profitable and consistent.
+                    </p>
+                </div>
+            </div>
+            <div class="mySlides row no-gutters">
+                <div class="col-md-6 text-center m-0">
+                    <img src="images\portfolio\lockPick.jpg" class="modalDisplay">
+                </div>
+                <div class="col-md-6 container4">
+                    <br>
+                    <h2>Programming Languages</h2>
+                    <p>
+                        I have worked in Python, Java, Javascript, Perl, HTML, CSS, ML, Prolog, and SQL. I prefer programming
+                        in Python, but I love learning and trying new things in new languages. I try to have a completed or
+                        ongoing project in each of the languages I know:
+                    </p>
+                    <br>
+                    <ul>
+                        <p>
+                            Python: Automated Trading Application
+                        </p>
+                        <p>
+                            Java: Price Pattern Search
+                        </p>
+                        <p>
+                            Web Development (JS,HTML,CSS): This website
+                        </p>
+                        <p>
+                            Perl: IT Monitoring System
+                        </p>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mySlides row no-gutters">
+                <div class="col-md-6 text-center m-0">
+                    <img src="images\portfolio\space.jpg" class="modalDisplay">
+                </div>
+                <div class="col-md-6 container4">
+                    <br>
+                    <h2>Future Work</h2>
+                    <p>
+                        I am currently in a mobile application development class and I wrote this website in order
+                        to develope more as a full stack developer. I have experience writing in back end technologies such as
+                        Python and Perl, but I want to make sure I position myself to be able to take on the
+                        responsibilities of a full stack developer.
+                    </p>
+                    <br>
+                    <p>
+                        Over the course of the Fall 2018 semester I plan to focus on mobile application development in
+                        order to publish one or two complete applications on IOS and Android operating systems.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </div>
+</section>
+
+<!-- Resume -->
+<section id="resume" class="majorSection text-center colCenter">
+    <div class="container smallerWidth">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Resume</h1>
+                <br>
+                <p>I am a senior at UNC - Wilmington working towards B.S.'s in Computer Science and Business
+                    Administration - Finance. I have developed skills in Python, Java, Financial Data Analysis,
+                    Perl, and Web Development by working on personal, work, and school projects. I started my college
+                    career as a finance major, but after taking an introductory computer science class I was immediately
+                    hooked. I have taken my education in both fields and focused on projects which allow me to gain
+                    experience in both, including an automated trading system to trade based off of certain financial
+                    indicators. I am passionate about both finance and computer science and I plan on working in the
+                    FinTech industry after graduating May 2019.</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Education</h3>
+                <br>
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">B.S. Computer Science</h5>
+                        </div>
+                        <p class="mb-1">August 2015 - May 2019</p>
+                        <p class="mb-1">GPA: 3.5</p>
+
+                    </div>
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">B.S. Business Administration</h5>
+                        </div>
+                        <p class="mb-1">August 2015 - May 2019</p>
+                        <p class="mb-1">GPA: 3.5</p>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+                <h3>Certifications</h3>
+                <br>
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Bloomberg Market Concepts</h5>
+                        </div>
+                        <p class="mb-1">Fall 2017</p>
+                </div>
+            </div>
+                        <br>
+        <br>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Technologies</h3>
+                <br>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Python
+                        <span class="badge badge-success badge-pill">Advanced</span>
+                    </li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Java
+                        <span class="badge badge-success badge-pill">Advanced</span>
+                    </li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Web Development
+                        <span class="badge badge-info badge-pill">Intermediate</span>
+                    </li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        SQL
+                        <span class="badge badge-info badge-pill">Intermediate</span>
+                    </li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Perl
+                        <span class="badge badge-info badge-pill">Intermediate</span>
+                    </li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Linux
+                        <span class="badge badge-info badge-pill">Intermediate</span>
+                    </li>
+                    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Mobile Development
+                        <span class="badge badge-secondary badge-pill">Learning</span>
+                    </li>
+                </ul>
+                        <br>
+        <br>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Skills</h3>
+                <br>
+                <div class="list-group">
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Data Analysis</h5>
+                        </div>
+                        <p class="mb-1">Individual stock and market trend analysis</p>
+                    </div>
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Strategic Problem Solving</h5>
+                        </div>
+                        <p class="mb-1">IT support, NYT Crossword player, poker player</p>
+                    </div>
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Leadership</h5>
+                        </div>
+                        <p class="mb-1">Surf Club President, Soccer team captain, entrepreneur</p>
+                    </div>
+                    <div class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Teamwork</h5>
+                        </div>
+                        <p class="mb-1">Group programming projects, Surf Team involvement, group financial analysis
+                            and investment decisions</p>
+                    </div>
+                </div>
+                        <br>
+        <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row p-4">
+            <div class="col-md-12">
+                <h2>Experience</h2>
+            </div>
+        </div>
+        <br>
+        <div class="row p-4 no-gutter">
+            <div class="col-md-2">
+                <img class="photo-sq-100" src="images\resume\nCino.png">
+            </div>
+            <div class="col-md-4">
+                <h5>
+                    nCino
+                </h5>
+                <h6>
+                    Developer Intern
+                </h6>
+                <small>
+                    Oct 2018 - Present
+                </small>
+                <small> | Wilmington, NC</small>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    As a Developer Intern at nCino I have the opportunity to learn from their skilled development team and contribute as I learn more about developing on the Salesforce platform.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row p-4 no-gutter">
+            <div class="col-md-2">
+                <img class="photo-sq-100" src="images\resume\lnet.png">
+            </div>
+
+            <div class="col-md-4">
+                <h5>
+                    Liquidnet
+                </h5>
+                <h6>
+                    Product Support Intern
+                </h6>
+                <small>
+                    May 2018 - Aug 2018
+                </small>
+                <small> | New York, NY</small>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    As an intern on the Product Support team at Liquidnet I had the opportunity to learn about the finance and
+                    technology industries first hand. I was able to contribute to the team by writing scripts in Python
+                    and Perl to automate tasks including hardware monitoring systems (Perl, SNMP, Linux), allocation
+                    report generation (Python), and parsing log files of FIX messages for exposures from order
+                    management system (OMS) outages (Python).
+
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row p-4 no-gutter">
+            <div class="col-md-2">
+                <img class="photo-sq-100" src="images\resume\uncw.jpeg">
+            </div>
+            <div class="col-md-4">
+                <h5>
+                    UNCW Technology Assistance Center
+                </h5>
+                <h6>
+                    IT Technician
+                </h6>
+                <small>
+                    Jan 2018 - Present
+                </small>
+                <small> | Wilmington, NC</small>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    I work at the UNCW Technology Assistance Center as an IT Technician to help troubleshoot and solve
+                    technical issues for more than 17,000 people in the UNCW community.
+
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row p-4">
+            <div class="col-md-2">
+                <img class="photo-sq-100" src="images\resume\logoClear.png">
+            </div>
+            <div class="col-md-4">
+                <h5>
+                    Investments
+                </h5>
+                <h6>
+                    Currency and Equities Trader
+                </h6>
+                <small>
+                    Jan 2013 - Present
+                </small>
+                <small> | Wilmington, NC</small>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    I am a low volume retail trader using my personal capital to apply strategies I have learned from
+                    my education as well as theories I have developed on my own. I am currently working on developing
+                    ways to automate my current strategy and create a platform for me to quickly write a strategy,
+                    back test, and put into production.
+
+                </p>
+
+            </div>
+        </div>
+        <br>
+        <div class="row p-4">
+            <div class="col-md-2">
+                <img class="photo-sq-100" src="images\resume\cbLogoSq.png">
+            </div>
+            <div class="col-md-4">
+                <h5>
+                    CB Surf Shop
+                </h5>
+                <h6>
+                    Sales Associate
+                </h6>
+                <small>
+                    Apr 2013 - May 2018
+                </small>
+                <small> | Carolina Beach, NC</small>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    As a Sales Associate at CB Surf Shop I facilitated the sale of surf boards and other surfing
+                    accessories as well as assisted in product management and visual merchandising.
+
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="majorSection text-center colCenter img-responsive bottomBg"
+         style="background-color: rgba(10,40,50,.3);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contact</h1>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="mailto:brittonkdeets@gmail.com?Subject=Website" target="_top" class="contactLink">brittonkdeets@gmail.com</a>
+            </div>
+            <div class="col-md-3">
+                <a href="tel:1-910-632-4594" class="contactLink">(910)-632-4594</a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.linkedin.com/in/brittondeets/" target="_blank" class="contactLink">LinkedIn</a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://github.com/Bkdeets" target="_blank" class="contactLink">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <br>
+    <div class="container" style="text-align: center;">
+        <span class="text-muted">&copy Britton Deets 2018</span>
+    </div>
+    <br>
+</footer>
+
+
+<!-- ---------------------------------------------- -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+<script src="brittons.js"></script>
+</body>
+</html>
