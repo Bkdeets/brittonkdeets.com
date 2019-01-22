@@ -18,12 +18,15 @@ window.onscroll = function() {
 
 
 /* slow scroll to link */
-$('a[href*="#"]').on('click', function (e) {
-	e.preventDefault();
+var link = 'a[href*="#"]:not([href="#carouselExampleIndicators"])';
+$(link).on('click', function (e) {
 
-	$('html, body').animate({
-		scrollTop: $($(this).attr('href')).offset().top
-	}, 400, 'linear');
+    	e.preventDefault();
+
+    	$('html, body').animate({
+    		scrollTop: $($(this).attr('href')).offset().top
+    	}, 400, 'linear');
+
 });
 
 
@@ -80,7 +83,3 @@ function showSlides(n) {
 function changeBrand(name) {
     document.getElementById("branding").innerHTML = name;
 }
-
-
-
-
